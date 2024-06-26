@@ -17,8 +17,12 @@ class GroceryStoreApp extends StatelessWidget {
       title: 'Grocery Store',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Colors.white,
+        ),
         useMaterial3: true,
       ),
+      home: const Homepage(),
       routes: routes,
     );
   }
