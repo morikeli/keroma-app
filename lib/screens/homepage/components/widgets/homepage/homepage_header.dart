@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app/constants/colors.dart';
 
 
-class HomepageHeader extends StatelessWidget {
+class HomepageHeader extends StatefulWidget {
   const HomepageHeader({
     super.key,
   });
 
+  @override
+  State<HomepageHeader> createState() => _HomepageHeaderState();
+}
+
+class _HomepageHeaderState extends State<HomepageHeader> {
   @override
   Widget build(BuildContext context) {
     return Container(
