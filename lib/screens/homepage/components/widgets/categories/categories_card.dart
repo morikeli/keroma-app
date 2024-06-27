@@ -43,7 +43,7 @@ class CategoriesCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ...List.generate(
-                    categories.length,
+                    4,
                     (index) {
                       return GroceryCategories(
                         categoryName: categories[index].categoryName,
