@@ -27,7 +27,7 @@ class SearchField extends StatelessWidget {
           prefixIcon: Icon(Icons.search),
           prefixIconColor: kHintTextandPrefixIconColor,
           suffixIcon: Icon(Icons.filter_list),
-          suffixIconColor: kHintTextandPrefixIconColor,
+          suffixIconColor: kPrimaryColor,
         ),
       ),
     );
