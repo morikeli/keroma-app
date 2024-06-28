@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/constants/colors.dart';
 
 
 class HomepageHeader extends StatefulWidget {
@@ -14,41 +13,27 @@ class HomepageHeader extends StatefulWidget {
 class _HomepageHeaderState extends State<HomepageHeader> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(color: kPrimaryColor),
-      padding: const EdgeInsets.all(20.0),
-      child: Column(
-        children: [
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return const Row(
+      children: [
+        Text.rich(
+          TextSpan(
+            text: 'Hello Olivia\n',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 25.0,
+            ),
             children: [
-              Text(
-                "Hello there! 😃 \nLet us search your grocery food",
-                style: TextStyle(color: kTextLightColor),
-              ),
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/imgs/user.jpg'),
-              ),
-            ],
+              TextSpan(
+                text: "It's cooking time. Find fresh food!",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.normal
+                ),
+              )
+            ]
           ),
-          const SizedBox(height: 20.0),
-          Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12.0),
-              color: Colors.white,
-            ),
-            child: const TextField(
-              decoration: InputDecoration(
-                border: InputBorder.none,
-                hintText: 'Search your daily grocery food',
-                hintStyle: TextStyle(color: kHintTextandPrefixIconColor),
-                prefixIcon: Icon(Icons.search),
-                prefixIconColor: kHintTextandPrefixIconColor
-              ),
-            ),
-          )
-        ],
-      ),
+        )
+      ],
     );
   }
 }
