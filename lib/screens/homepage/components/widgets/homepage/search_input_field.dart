@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/constants/colors.dart';
 
-
 class SearchField extends StatelessWidget {
   const SearchField({
     super.key,
@@ -14,19 +13,23 @@ class SearchField extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.0),
         boxShadow: [
           BoxShadow(
-              blurRadius: 15,
-              color: kBoxShadowColor.withOpacity(0.6))
+            blurRadius: 15,
+            color: kBoxShadowColor.withOpacity(0.6),
+          )
         ],
         color: Colors.white,
       ),
-      child: const TextField(
+      child: TextField(
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: 'Search your daily grocery food',
-          hintStyle: TextStyle(color: kHintTextandPrefixIconColor),
-          prefixIcon: Icon(Icons.search),
+          hintStyle: const TextStyle(color: kHintTextandPrefixIconColor),
+          prefixIcon: const Icon(Icons.search),
           prefixIconColor: kHintTextandPrefixIconColor,
-          suffixIcon: Icon(Icons.filter_list),
+          suffixIcon: IconButton(
+            icon: const Icon(Icons.filter_list),
+            onPressed: () {},
+          ),
           suffixIconColor: kPrimaryColor,
         ),
       ),
