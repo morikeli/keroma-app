@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/homepage/components/widgets/grocery_card/grocery_card.dart';
 import 'package:grocery_app/screens/homepage/components/widgets/homepage/banners_widget.dart';
 import 'package:grocery_app/screens/homepage/components/widgets/homepage/homepage_header.dart';
+import 'package:grocery_app/screens/homepage/components/widgets/homepage/recent_shop_card.dart';
 import 'package:grocery_app/screens/homepage/components/widgets/homepage/search_input_field.dart';
-
 
 class HomepageBody extends StatefulWidget {
   const HomepageBody({
@@ -23,33 +23,44 @@ class _HomepageBodyState extends State<HomepageBody> {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: ListView(
-          children: const [
-            HomepageHeader(),
-            SizedBox(height: 15.0),
-            SearchField(),
-            SizedBox(height: 35.0),
-            Banners(),  // discount and ad banners
-            SizedBox(height: 25.0),
-
+          // ignore: prefer_const_literals_to_create_immutables
+          children: [
+            const HomepageHeader(),
+            const SizedBox(height: 15.0),
+            const SearchField(),
+            const SizedBox(height: 15.0),
+            const Banners(), // discount and ad banners
+            const SizedBox(height: 15.0),
+            const Text(
+              'Categories',
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 15.0),
             // CustomTabs(),
             // CustomTabBarViewWidget()
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 GroceryCard(),
                 GroceryCard(),
               ],
             ),
-            SizedBox(height: 15.0),
-            Row(
+            const SizedBox(height: 15.0),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 GroceryCard(),
                 GroceryCard(),
               ],
             ),
-            SizedBox(height: 10.0),
-
+            const SizedBox(height: 20.0),
+            const Text(
+              'Recent Shop',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            // const SizedBox(height: 10.0),
+            const RecentShopCard(),
+            
           ],
         ),
       ),
