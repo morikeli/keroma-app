@@ -17,10 +17,15 @@ class GroceryStoreApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Grocery Store',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: kPrimaryColor),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Colors.white,
         ),
+        scaffoldBackgroundColor: kScaffoldBackgroundColor,
         useMaterial3: true,
       ),
       home: const Homepage(),
