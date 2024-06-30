@@ -1,7 +1,7 @@
 # Keroma mobile app
 
 ## Demo
-![flutter_01](https://github.com/morikeli/keroma-app/assets/78599959/3c3d0482-d8c1-45b1-ae8a-5460d70dfb07)
+![d57c2447fe3586d6d0d003195b54d651](https://github.com/morikeli/keroma-app/assets/78599959/bdde5772-67cc-40d5-b04d-73e5b7d4bcdc)
 
 
 ## Overview
