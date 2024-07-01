@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/constants/colors.dart';
-import 'package:grocery_app/screens/categories/categories_screen.dart';
 import 'package:grocery_app/screens/homepage/homepage.dart';
 
 
@@ -34,11 +33,6 @@ class CustomDrawerWidget extends StatelessWidget {
                 leading: const Icon(Icons.home),
                 title: const Text('Home'),
                 onTap: () => Navigator.popAndPushNamed(context, Homepage.routeName),
-              ),
-              ListTile(
-                leading: const Icon(Icons.list_outlined),
-                title: const Text('Categories'),
-                onTap: () => Navigator.popAndPushNamed(context, CategoriesScreen.routeName),
               ),
               ListTile(
                 leading: const Icon(Icons.airport_shuttle),
