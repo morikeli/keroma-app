@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/constants/colors.dart';
 import 'package:grocery_app/routes.dart';
-import 'package:grocery_app/screens/login/login.dart';
+import 'package:grocery_app/screens/onboarding/onboarding_screen.dart';
 
 
 void main() {
