@@ -29,8 +29,8 @@ class GroceryStoreApp extends StatelessWidget {
         scaffoldBackgroundColor: kScaffoldBackgroundColor,
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
-      initialRoute: LoginScreen.routeName,
+      home: const OnboardingScreen(),
+      initialRoute: OnboardingScreen.routeName,
       routes: routes,
     );
   }
