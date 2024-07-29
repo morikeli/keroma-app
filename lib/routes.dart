@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/homepage/homepage.dart';
 import 'package:grocery_app/screens/login/login.dart';
+import 'package:grocery_app/screens/onboarding/onboarding_screen.dart';
 import 'package:grocery_app/screens/otp/otp.dart';
 import 'package:grocery_app/screens/product_details/product_details.dart';
 import 'package:grocery_app/screens/signup/signup.dart';
 
 
 final Map<String, WidgetBuilder> routes = {
+  OnboardingScreen.routeName: (context) => const OnboardingScreen(),
   LoginScreen.routeName: (context) => const LoginScreen(),
   SignupScreen.routeName:(context) => const SignupScreen(), 
   OTPScreen.routeName:(context) => const OTPScreen(),
