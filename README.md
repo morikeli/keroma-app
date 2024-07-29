@@ -1,7 +1,7 @@
 # Keroma mobile app
 
 ## Demo
-
+![d57c2447fe3586d6d0d003195b54d651](https://github.com/morikeli/keroma-app/assets/78599959/bdde5772-67cc-40d5-b04d-73e5b7d4bcdc)
 
 
 ## Overview
